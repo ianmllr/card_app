@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CardApp</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Import Socket.IO library -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Defer loading of your script so HTML elements exist when it runs -->
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+
+<main id="main-content">
+    <h1>Welcome to CardApp</h1>
+    <p>So you can play card games with your friends, even when you've forgotten the deck.</p>
+
+    <h1>Create a Lobby</h1>
+    <input type="text" id="username" placeholder="Username" aria-label="Username"/>
+    <input type="text" id="lobbyName" placeholder="Lobby Name" aria-label="Password" />
+
+    <!-- Checkbox -->
+    <div style="margin: 10px 0;">
+        <input type="checkbox" id="isPrivate" />
+        <label for="isPrivate">Private lobby</label>
+    </div>
+
+    <!-- Password Input (Hidden by default) -->
+    <div id="passwordContainer" style="display: none; margin-bottom: 10px;">
+        <input
+                type="text"
+                id="lobbyPassword"
+                placeholder="4-digit Code"
+                maxlength="4"
+                aria-label="Lobby Password"
+        />
+    </div>
+
+    <button id="createBtn">Create Lobby</button>
+</main>
+</body>
+</html>

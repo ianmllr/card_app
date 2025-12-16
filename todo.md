@@ -1,15 +1,22 @@
 # Todo
 
-## Overall
-- Frontend
-- Backend
-- 
-## Models
-- Card model
-- User model
-- 
-## Routes
+## overall
+- frontend
+- backend
+- basic "party" functionality - host can kick other players etc.
 
-## Games
-- Basic "open" game where you can take cards and put them in different piles on the table
-- Later on, implement full premade games
+
+## models
+- card model
+- cser model
+
+
+## routes
+
+## games
+- basic "open" game where you can take cards and put them in different piles on the table
+
+# later on
+- implement full premade games
+- admin functions
+- 
