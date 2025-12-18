@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Game Room</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <script src="/socket.io/socket.io.js"></script>
-
-
-    <!-- Load game logic -->
-
-
-
-
-
     <script src="js/game.js" defer></script>
 </head>
 <body>
+
+<div id="host-options" class="hidden">
+    <h2>Host Options</h2>
+    <button id="start-game-btn">Start game</button>
+    <button id="shuffle-deck-btn">Shuffle Deck</button>
+    <button id="reset-game-btn">Reset game</button>
+</div>
+
 <main id="main-content">
     <h1 id="lobby-title">Loading Lobby...</h1>
     <p>Player: <span id="player-name">...</span></p>
 
-    <!-- Game board placeholder -->
     <div id="game-area">
+        <div id="table-container" class="card-container">
+            <!-- cards rendered here -->
+        </div>
+
         <h3>My Hand:</h3>
         <div id="hand-container" class="card-container">
-            <!-- Cards will be inserted here by JavaScript -->
+            <!-- cards rendered here -->
         </div>
     </div>
-
-
-
-
-
-    </div>
 </main>
+
+<div id="action-bar">
+    <button id="draw-card-btn">Draw Card</button>
+    <button id="play-card-btn">Play Card</button>
+    <button id="pass-turn-btn">Pass Turn</button>
+</div>
 </body>
 </html>

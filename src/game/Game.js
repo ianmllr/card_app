@@ -56,9 +56,6 @@ class Game {
             players: this.players
         };
     }
-
-
-
-
-
 }
+
+module.exports = Game;

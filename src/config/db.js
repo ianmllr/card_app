@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const connectDB = async (url) => {
-    if (!url) throw new Error('MONGO_URL not provided');
+    if (!url) throw new Error('MONGO_URI not provided');
     try {
         await mongoose.connect(url);
         console.log('MongoDB connected');
